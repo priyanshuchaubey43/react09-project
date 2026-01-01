@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#root {
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+p:first-of-type {
+  font-size: 3rem;
+  color: #667eea;
+  background: linear-gradient(to right, #f0f0f0, #ffffff);
+}
+
+button {
+  width: calc(33.33% - 10px);
+  padding: 20px;
+  margin: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:nth-child(4),
+button:nth-child(5),
+button:nth-child(6),
+button:nth-child(7),
+button:nth-child(8),
+button:nth-child(9) {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+}
+
+button:nth-child(9),
+button:nth-child(10) {
+  background: linear-gradient(135deg, #2196F3, #1976D2);
+}
+
+button:last-child {
+  background: linear-gradient(135deg, #f44336, #d32f2f);
+  color: white;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+  
+  p:first-of-type {
+    font-size: 2.5rem;
+  }
+  
+  button {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+}

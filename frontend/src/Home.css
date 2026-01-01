@@ -1,0 +1,126 @@
+/* General page setup */
+body {
+  background-color: #141414;
+  color: white;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 80vh;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/80a10e20-bf25-4f9b-8c94-8a7d7ad33cf4/6b61fce4-bb25-4bde-8a40-c87a4a502b4e/IN-en-20240826-popsignuptwoweeks-perspective_alpha_website_large.jpg")
+    center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.hero-btn {
+  background-color: #e50914;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #f40612;
+  transform: scale(1.05);
+}
+
+/* Movie Section */
+.movie-section {
+  padding: 50px 60px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #e50914;
+}
+
+/* Info Section */
+.info-section {
+  background-color: #181818;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.info-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #e50914;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.info-card {
+  background-color: #222;
+  padding: 25px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  background-color: #2a2a2a;
+}
+
+.info-card h3 {
+  color: #e50914;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #0d0d0d;
+  padding: 20px 0;
+  text-align: center;
+  color: #888;
+  border-top: 1px solid #222;
+}

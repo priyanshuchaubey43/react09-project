@@ -1,0 +1,86 @@
+.signup-container {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(to bottom, #000000cc, #000000cc),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/7d15a5c7.jpg")
+      no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.signup-box {
+  position: relative;
+  width: 360px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.signup-box h1 {
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.signup-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-box input {
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #333;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.signup-box input::placeholder {
+  color: #aaa;
+}
+
+.signup-box button {
+  padding: 12px;
+  background: #e50914;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.signup-box button:hover {
+  background: #f6121d;
+}
+
+.login-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+}
+
+.link-btn:hover {
+  text-decoration: underline;
+}

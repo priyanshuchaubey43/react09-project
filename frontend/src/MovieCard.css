@@ -1,0 +1,102 @@
+.movie-card {
+  margin-top: 40px;
+  margin-left: 20px;
+  position: relative;
+  width: 260px;
+  height: 420px;
+  background-color: #141414;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.movie-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 40px rgba(229, 9, 20, 0.5);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.4s ease;
+}
+
+.movie-card:hover img {
+  filter: brightness(60%) blur(1px);
+}
+
+/* Overlay Gradient for text visibility */
+.movie-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  z-index: 1;
+}
+
+/* Text container overlay */
+.movie-info {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  color: #fff;
+  z-index: 2;
+  text-align: left;
+}
+
+.movie-info h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.movie-info p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Buttons */
+.movie-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.movie-actions button {
+  flex: 1;
+  border: none;
+  padding: 8px 0;
+  border-radius: 6px;
+  background: #e50914;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.movie-actions button:hover {
+  background: #f40612;
+  transform: translateY(-2px);
+}
+
+/* Subtle glow when hovered */
+.movie-card:hover .movie-info h3 {
+  color: #ff4c4c;
+  text-shadow: 0 0 10px rgba(229, 9, 20, 0.8);
+}
+
+/* Optional: Add a floating title on hover */
+.movie-card:hover .movie-info {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
